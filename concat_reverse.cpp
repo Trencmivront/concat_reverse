@@ -61,6 +61,9 @@ string concat(string a, string b) {
 	 as a pointer.
 	 but when I print it out it gives me full string which I desire
 	 strings are pointers?
+	 Co-pilot told me strings were able to hold *char pointer values
+	 so if I said newString = p1, would be same as the code below
+	 strings and pointers are in love
 	*/
 	string newString = &p1[0];
 
@@ -69,17 +72,23 @@ string concat(string a, string b) {
 
 string reverse(string word) {
 
-	int sizeOfWord = word.length();
+	// we again take the size of our word
+int sizeOfWord = word.length();
 
-	char* p1 = &word[0];
-	char* p2 = &p1[sizeOfWord - 1];
-	
-	for (int i = 1; i < sizeOfWord; i++) {
-		p2[i] = p1[sizeOfWord - 1 -i];
-	}
+char* p1 = &word[0];
 
+/* p2 value requiers definition so
+we make it by giving it last value of p1 */
+char* p2 = &p1[sizeOfWord - 1];
 
-	string reversedWord = &p2[0];
+/* p2 will start takin from last value of p1 to first value */
+for (int i = 1; i < sizeOfWord; i++) {
+	p2[i] = p1[sizeOfWord - 1 -i];
+}
 
-	return reversedWord;
+/* it's the same as we did before */
+string reversedWord = p2;
+
+return reversedWord;
+
 }
