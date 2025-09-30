@@ -1,0 +1,5 @@
+﻿  FileName.cpp
+C:\Users\Yılmaz\source\repos\Project1\Project1\FileName.cpp(43,16): warning C4267: 'başlatılıyor': 'size_t' - 'int' dönüşümü; veri kaybı olabilir
+C:\Users\Yılmaz\source\repos\Project1\Project1\FileName.cpp(44,16): warning C4267: 'başlatılıyor': 'size_t' - 'int' dönüşümü; veri kaybı olabilir
+C:\Users\Yılmaz\source\repos\Project1\Project1\FileName.cpp(71,17): warning C4267: 'başlatılıyor': 'size_t' - 'int' dönüşümü; veri kaybı olabilir
+  Project1.vcxproj -> C:\Users\Yılmaz\source\repos\Project1\x64\Debug\Project1.exe
